@@ -1,15 +1,9 @@
 
 module.exports = function defer() {
-  let resolve;
-  let reject;
 
-  const promise = new Promise((res, rej) => {
-    resolve = res;
-    reject = rej;
-  });
-
-  promise.resolve = resolve;
-  promise.reject = reject;
+  let args = [];
+  const promise = new Promise((...promiseArgs) => args = promiseArgs);
+  [promise.resolve, promise.reject] = args;
 
   return promise;
 }
