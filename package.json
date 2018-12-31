@@ -1,0 +1,11 @@
+{
+  "name": "deferitize",
+  "version": "1.0.0",
+  "description": "Pushes resolve and reject onto a Promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Stevens",
+  "license": "MIT"
+}
